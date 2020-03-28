@@ -1,17 +1,229 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
+<!doctype html>
+<html>
+	<head>
+    <link href="https://fonts.googleapis.com/css?family=Gotu&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta charset="UTF-8">
+		<title>Varantine</title>
+	<style>
+    
+		/* body {
+			margin: 0;
+			background-color:pink;
+		}	
+		#navbar {
+			background-color:pink;
+			width: 100%;
+			height: 60px;
+		}
+		table {
+			margin-left: 80%;
+			margin-right: auto;
+			height: 60px;
+		}
+		td {
+			width: 100px;
+			text-align: center;
+		}
+		#intro {
+			height: 600px;
+			text-align: left;
+			padding-top: 50px;
+			background-image: url('../img/lovehouse.jpg');
+      background-size: 1400px;
+      background-position: center;
+      background-repeat:  no-repeat;
+			padding-left: 100px;
+			padding-right: 50px;
+		}
+		h1 {
+			margin-top: 30px;
+      margin-left: 100px;
+			font-size: 60pt;
+      font-family: 'Gotu', sans-serif;
+		}
+		#introbuttons {
+			width: 500px;
+			height:50px;
+			margin-top: 30px;
+			margin-left: auto;
+			margin-right: auto;
+      font-family: 'Gotu', sans-serif;
+		}
+		#signup {
+			width: 200px;
+			height: 50px;
+			background-color: pink;
+			float: left;
+			line-height: 50px;
+			text-decoration: none;
+			color:black;
+      text-align: center;
+		}
+		#signin {
+			width: 200px;
+			height: 50px;
+			background-color:pink;
+			float: left;
+			margin-left: 100px;
+			line-height: 50px;
+			text-decoration: none;
+			color: black;
+      text-align: center;
+		}
+		.clearfloat {
+			clear: both;
+		}
+    #p1 {
+      font-size: 15pt;
+      margin-top: 270px;
+      margin-bottom: 0px;
+      font-family: 'Gotu', sans-serif;
+      text-align: center;
+    }
+    #p2 {
+      font-size: 15pt;
+      margin-top: 0px;
+      font-family: 'Gotu', sans-serif;
+      text-align: center;
+      margin-bottom: 0px;
+    }
+
+		#overview {
+			height: 600px;
+			text-align: left;
+			padding-top: 10px;
+			background-color: pink;
+      background-size: 1400px;
+      background-position: center;
+      background-repeat:  repeat-y;
+			padding-left: 50px;
+			padding-right: 50px;
+      margin-bottom: 0px;
+		}
+    .p3 {
+      font-size: 15pt;
+      margin-top: 0px;
+      font-family: 'Gotu', sans-serif;
+      text-align: left;
+      margin-bottom: 0px;
+    }
+    .p4 {
+      font-size: 15pt;
+      margin-top: 0px;
+      margin-left:45px;
+      font-family: 'Gotu', sans-serif;
+      text-align: left;
+      margin-bottom: 0px;
+    }
+    #goal{
+      width: 600px;
+			height: 200px;
+			float: left;
+    }
+    #step{
+      width: 400px;
+			height: 200px;
+      margin-left:60px;
+      float: left;
+    }
+    .clearfloat {
+			clear: both;
+		}
+		#team {
+			height: 600px;
+			text-align: left;
+			padding-top: 10px;
+      background-size: 1400px;
+      background-position: center;
+			background-color: pink;
+			padding-left: 0px;
+			padding-right: 50px;
+      margin-bottom: 0px;
+      margin-left:0px;
+		}
+
+    .p5 {
+      font-size: 15pt;
+      margin-top: 0px;
+      margin-left:100px;
+      font-family: 'Gotu', sans-serif;
+      text-align: left;
+    }
+    .clearfloat {
+			clear: both;
+		}
+    #m{
+      margin-top: 0px;
+      margin-left:0px;
+      padding-left: 0;
+      padding-right: 0;
+      width: 1300px
+ 
+    }
+    #m1{
+      float: left;
+      width: 250px;
+      margin-left:0px;
+    }
+    #m2{
+      float: left;
+      width: 250px;
+      margin-left: 0px;
+    }
+    #m3{
+      float: left;
+      width: 250px;
+      margin-left: 0px;
+    }
+    #m4{
+      float: left;
+      width: 250px;
+      margin-left: 0px;
+    }
+    #m5{
+      float: left;
+      width: 250px;
+      margin-left: 0px;
+    }
+    #pic1{
+      float: left;
+      width: 200px;
+      padding-left: 50px;
+    }
+    #pic2{
+      float: left;
+      width: 200px;
+      padding-left: 50px;
+    }
+    #pic3{
+      float: left;
+      width: 200px;
+      padding-left: 50px;
+    }
+    #pic4{
+      float: left;
+      width: 200px;
+      padding-left: 50px;
+    }
+    #pic5{
+      float: left;
+      width: 200px;
+      padding-left: 50px;
+    }
+    .clearfloat {
+			clear: both;
+		}
+    @media (max-width: 991px) {
+
+    }
+    @media (max-width: 575px) {
+
+} */
+	</style>
+	</head>
+	
+	<body>
     <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+	</body>
 </html>
